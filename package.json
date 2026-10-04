@@ -1,0 +1,12 @@
+{
+  "name": "cmsc100-pinano07",
+  "version": "1.0.0",
+  "description": "CMSC 100 Exercise 07 - Practice front-end scripting",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorite Food</title>
+
+    <!-- I use a URL to connect the CSS file served by my Express server. -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MY FAVORITES</h1>
+    </header>
+
+    <!-- I placed the form above the content section as required. -->
+    <section class="form-section">
+        <h2>Add a Favorite Food</h2>
+
+        <form id="foodForm">
+            <div class="form-group">
+                <label for="foodName">Food Name</label>
+                <input type="text" id="foodName" placeholder="Enter food name">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter description">
+            </div>
+
+            <div class="form-group">
+                <label for="imageUrl">Image URL</label>
+                <input type="text" id="imageUrl" placeholder="Paste image URL">
+            </div>
+
+            <div class="form-group">
+                <label for="rank">Rank</label>
+                <input type="number" id="rank" placeholder="Enter rank">
+            </div>
+
+            <button type="submit">Add Food</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <main class="layout">
+        <nav class="sidebar">
+            <div class="nav-item active">FAVORITE FOOD</div>
+            <div class="nav-item">FAVORITE SONGS</div>
+            <div class="nav-item">FAVORITE QUOTES</div>
+        </nav>
+
+        <!-- This section is intentionally empty at first.
+             JavaScript creates the food cards using the DOM. -->
+        <section id="foodCards" class="food-cards"></section>
+
+        <aside class="ads">
+            <h2>ADS</h2>
+            <div class="ad-box">img</div>
+            <div class="ad-box">img</div>
+            <div class="ad-box">img</div>
+        </aside>
+    </main>
+
+    <!-- I use a URL to connect form.js served by my Express server. -->
+    <script src="/form.js"></script>
+</body>
+</html>
