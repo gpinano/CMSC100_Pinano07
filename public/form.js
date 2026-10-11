@@ -1,4 +1,3 @@
-
  // I get the form and the section where the food cards will be displayed.
  // I use document.getElementById() to access specific HTML elements through their IDs.
  // The foodForm variable refers to the form where the user enters the food information.
